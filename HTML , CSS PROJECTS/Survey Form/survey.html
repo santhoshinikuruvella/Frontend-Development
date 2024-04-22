@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Survey Form</title>
+  <link href="form.css" rel="stylesheet"/>
+</head>
+<body>
+    
+  <div id="form">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill in the details</p>
+  <form id="survey-form">
+    <div id="part1">
+    <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required name="email">
+    
+    <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" placeholder="Enter your age" required min="13" max="100" name="age">
+    
+    </div>
+    <label id="droplabel" for="dropdown">Which role describes you the best:
+      <select id="dropdown" name="dropdown">
+        <option>Select one</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Others</option>
+      </select>
+    </label>
+    <div id="part2">
+    <label>Would you recommend our website to your friends:</label>
+    <label for="yes"><input type="radio" name="refer" id="yes" checked value="Yes">Yes</label>
+    <label for="No"><input type="radio" name="refer" id="No" value="No">No</label>
+    <label for="May be"><input type="radio" name="refer" id="May be" value="May be">Maybe</label>
+    </div>
+    <div id="part3">
+    <label>Course you have improved: (Tick all that apply)</label>
+    <label for="web-development"><input type="checkbox" id="web-development" value="web">Web Development</label>
+    <label for="Editing"><input type="checkbox" id="Editing" value="edit">Editing</label>
+    <label for="Data-analysis"><input type="checkbox" id="Data-analysis" value="data">Data Analysis</label>
+    <label for="Sql"><input type="checkbox" id="Sql" value="sql">SQL</label>
+    <label for="java"><input type="checkbox" id="java" value="java">Java</label>
+    <label for="python"><input type="checkbox" id="python" value="python">Python</label>
+</div>
+    <label for="comments" id="comment">Any comments or suggestions:
+      <textarea id="comments" rows="3" cols="30" placeholder="I like..."></textarea>
+    </label>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+  </div>
+</body>
+</html>
